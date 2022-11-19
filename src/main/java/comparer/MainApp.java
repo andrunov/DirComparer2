@@ -15,7 +15,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import java.awt.*;
 import java.io.IOException;
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -67,7 +66,6 @@ public class MainApp extends Application {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("MainView.fxml"));
             loader.setResources(ResourceBundle.getBundle("comparer/bundles/Locale", locale));
-           // loader.setLocation(MainApp.class.getResource("MainView.fxml"));
             rootLayout = loader.load();
 
             // Show the scene containing the root layout.
